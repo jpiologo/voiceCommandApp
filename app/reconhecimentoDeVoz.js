@@ -1,6 +1,7 @@
 const elementoChute = document.getElementById('chute')
 
-window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+window.SpeechRecognition = window.SpeechRecognition || 
+webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.lang = 'pt-Br'
@@ -15,6 +16,7 @@ function onSpeak(e) {
 
 function exibeChuteNaTela(chute) {
     elementoChute.innerHTML = `
-        <div>Você disse: </div>
+        <div>Seu chute: </div>
+        <span class="box">${chute}</span>
     `
 }
