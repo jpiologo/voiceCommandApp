@@ -9,19 +9,27 @@
     <script src="app/sortearNumero.js" defer></script>
     <script src="app/reconhecimentoDeVoz.js" defer></script>
     <script src="app/validacoes.js" defer></script>
-    <title>Número Secreto</title>
+    <title>Vocal Vault</title>
 </head>
 <body>
 
-    <h1>Acerte o número secreto!</h1>
+    <div id="tela-inicio" class="boas-vindas">
+        <h1>Bem-vindo ao Vocal Vault! <i class="fa-solid fa-vault"></i></h1>
+        <h4>Aperte iniciar para tentar adivinhar o número secreto através do comando de voz.</h3>
+    </div>
 
-    <h3>Dica: o número está entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></h3>
+    <div id="tela-de-chutes" class="hide">
+        <h1>Acerte o número secreto! <i class="fa-solid fa-microphone"></i></h1>
+        <h3>Dica: o número está entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></h3>
+    </div>
 
     <div id="chute" class="mensagem">
         <!-- <div>Seu chute:</div>
         <span class="box">20</span>
         <div>O número secreto é maior <i class="fa-solid fa-greater-than"></i></div> -->
     </div>
+
+    <button id="iniciar-jogo" class="btn ">INICIAR</button>
     
 </body>
 </html>

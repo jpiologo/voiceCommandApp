@@ -17,7 +17,7 @@ function validaChute() {
         document.body.innerHTML = `
             <h2>Isso aí, você acertou o número secreto! 🥳</h2>
 
-            <button id="jogar-novamente" class="btn-jogar-novamente">JOGAR NOVAMENTE</button>
+            <button id="jogar-novamente" class="btn btn-jogar-novamente">JOGAR NOVAMENTE</button>
         ` 
     } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `
@@ -35,7 +35,7 @@ function chuteForInvalido(numero) {
     if (chute.toUpperCase() === "GAME OVER"){
         document.body.innerHTML = `
             <h2>GAME OVER!!</h2>
-            <button id="jogar-novamente" class="btn-jogar-novamente">JOGAR NOVAMENTE</button>
+            <button id="jogar-novamente" class="btn btn-jogar-novamente">JOGAR NOVAMENTE</button>
         `
         document.body.style.backgroundColor = "black";
     }
