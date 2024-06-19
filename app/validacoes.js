@@ -32,7 +32,17 @@ function validaChute() {
 }
 
 function chuteForInvalido(numero) {
-    return Number.isNaN(numero)
+    if (chute.toUpperCase() === "GAME OVER"){
+        document.body.innerHTML = `
+            <h2>GAME OVER!!</h2>
+            <button id="jogar-novamente" class="btn-jogar-novamente">JOGAR NOVAMENTE</button>
+        `
+        document.body.style.backgroundColor = "black";
+    }
+    else {
+        return Number.isNaN(numero);
+    }
+    
 }
 
 
